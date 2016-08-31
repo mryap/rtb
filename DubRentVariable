@@ -1,0 +1,58 @@
+library(caret)
+
+# ??createDataPartition
+# ?train
+# ?expand.grid
+# ??varImp showcases variable importance of the variables used in the final model.
+# ??defaultSummary
+
+#use the read.csv function to read the data from a CSV file
+#drl_cpi_prr_vr_housingstock_0.csv
+#into a data frame
+df <- read.csv(file.choose(), header=TRUE)
+
+# Data Loading and Splitting
+# 80% train data
+trainIndex <- createDataPartition(df$Rent, p = .8,
+                                  list = FALSE,
+                                  times = 1)
+
+head(trainIndex)
+
+dfTrain <- df[ trainIndex,]
+dfTest  <- df[-trainIndex,]
+
+# Model Building and Tuning
+lmFit<-train(Rent~., data = dfTrain, method = "lm")
+summary(lmFit)
+
+ctrl<-trainControl(method = "cv",number = 10)
+
+lmCVFit<-train(Rent ~ ., data = df, method = "lm", trControl = ctrl, metric="Rsquared")
+
+summary(lmCVFit)
+
+# Model Diagnostics and Scoring
+residuals<-resid(lmFit)
+
+predictedValues<-predict(lmFit)
+
+plot(dfTrain$Rent,residuals)
+
+abline(0,0)
+
+plot(dfTrain$Rent,predictedValues)
+
+varImp(lmFit)
+
+plot(varImp(lmFit))
+
+predictedVal<-predict(lmFit,val)
+
+#
+modelvalues<-data.frame(obs = dfTrain$Rent, pred=predictedVal)
+
+defaultSummary(modelvalues)
+
+#http://www.analyticsvidhya.com/blog/2014/12/caret-package-stop-solution-building-predictive-models/
+
