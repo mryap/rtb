@@ -27,3 +27,13 @@ To construct effective features in the training data, 5 training datasets are co
   <img src="https://github.com/mryap/rtb/blob/master/media/CnE4iSpWAAAcG7v.jpg?raw=true">
 </p>
 Adding additional features like Number of Bedrooms to the data on the same training split – 70/30 produce the following outcome that Linear Regression is the best model in terms of performance
+
+
+# Evaluating the importance of the variables
+Kuhn’s R caret package is use to calculate variable importance. The varImp function together with lm object class produces the following outcome. 
+<p align="center">
+  <img src="https://github.com/mryap/rtb/blob/master/media/Rplot.png?raw=true">
+</p>
+
+Results from AzureML analysis also produce a similar ranking results in order of permutation importance scores. 
+
