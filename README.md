@@ -26,3 +26,4 @@ To construct effective features in the training data, 5 training datasets are co
 <p align="center">
   <img src="https://github.com/mryap/rtb/blob/master/media/CnE4iSpWAAAcG7v.jpg?raw=true">
 </p>
+Adding additional features like Number of Bedrooms to the data on the same training split – 70/30 produce the following outcome that Linear Regression is the best model in terms of performance
