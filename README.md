@@ -8,8 +8,14 @@ Transaction data from publicly available Private Residential Tenancies Board (PR
 Private Residential Tenancies Board (PRTB), Central Statistics Office (CSO), OECD data are extracted and concatenated together as a multi-variate dataset, with rental data as the predictable column. 
 http://dx.doi.org/10.7910/DVN/HRKFN2 
 
-# Machine Learning Algorithms
+# Machine Learning Algorithms Deploy
 - Feature engineering
 - Exploratory Analysis 
-- Boosted Decision Tree Regression and 
-- Ordinary Least Squares Linear regression are used. 
+- Boosted Decision Tree Regression 
+- Ordinary Least Squares Linear regression 
+
+
+# Outcome
+<p align="center">
+  <img src="https://github.com/mryap/rtb/blob/master/media/CnE4iSpWAAAcG7v.jpg?raw=true">
+</p>
