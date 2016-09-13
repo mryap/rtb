@@ -14,6 +14,13 @@ http://dx.doi.org/10.7910/DVN/HRKFN2
 - Boosted Decision Tree Regression 
 - Ordinary Least Squares Linear regression 
 
+# Feature Selection
+To construct effective features in the training data, 5 training datasets are constructed based on the same raw input data, but different additional features to each training set were added.
+- Set A = Property Type + Location + Year + Rent features for the predicted rent
+- Set B = Property Type + Location + Year + CPI + Rent features for the predicted rent
+- Set C = Property Type + Location + Year + CPI + Price-Rent-Ratio + Rent features for the predicted rent 
+- Set D = Property Type + Location + CPI + Price-Rent-Ratio + Vacancy Rates + Year + Rent features for the predicted rent 
+- Set E = Property Type + Location + Year + CPI + Vacancy Rates + No. of Room + Rent features for the predicted rent
 
 # Measuring Model Performance
 <p align="center">
