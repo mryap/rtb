@@ -26,6 +26,17 @@ To construct effective features in the training data, 5 training datasets are co
 <p align="center">
   <img src="https://github.com/mryap/rtb/blob/master/media/CnE4iSpWAAAcG7v.jpg?raw=true">
 </p>
+
+On a split training (70%) and test (30%) dataset, Boosted decision tree regression model is also the matching algorithm. 
+
+| Split Data  | Algorithm  | RMSE  |  r2 |  
+|---|---|---|---|---|
+|  50/50 |  Boosted Decision Tree Regression | 343.3298  | 0.487419  |   
+|  65/35 |  Boosted Decision Tree Regression | 347.0633  | 0.473526  |   
+|  60/40 |  Boosted Decision Tree Regression | 358.6932  | 0.452571  |   
+|  80/20 |  Boosted Decision Tree Regression | 367.1906  | 0.411125  |   
+|  70/30 |  Boosted Decision Tree Regression | 344.0009  | 0.497633  |  
+
 Adding additional features like Number of Bedrooms to the data on the same training split – 70/30 produce the following outcome that Linear Regression is the best model in terms of performance
 
 
@@ -35,5 +46,16 @@ Kuhn’s R caret package is use to calculate variable importance. The varImp fun
   <img src="https://github.com/mryap/rtb/blob/master/media/Rplot.png?raw=true">
 </p>
 
-Results from AzureML analysis also produce a similar ranking results in order of permutation importance scores. 
+In order of permutation importance scores, results from Azure ML analysis also produce a similar ranking results 
+
+|  Feature 	| Score  	|
+|---	|---	|
+|  PropertyType 	|   201.2722	|
+|   Location	|   180.1229	|
+|   CPI	|   65.83267	|
+|   Price.Rent.Ratio	|  65.11127 	|
+|   HousingStock	| 1.358679  	|
+|   VacancyRate	|  0.828779 	|
+|   NumberofBedrooms	|   0.005061	|
+|   Year 	|   -0.02083	|
 
