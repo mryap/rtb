@@ -15,7 +15,7 @@ http://dx.doi.org/10.7910/DVN/HRKFN2
 - Ordinary Least Squares Linear regression 
 
 
-# Outcome
+# Measuring Model Performance
 <p align="center">
   <img src="https://github.com/mryap/rtb/blob/master/media/CnE4iSpWAAAcG7v.jpg?raw=true">
 </p>
