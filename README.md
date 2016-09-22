@@ -65,3 +65,10 @@ AirBnB being cited as an influencing factor in the Irish rental market. For the 
 According to Kieran and Gerard, house prices depend on how much individuals can borrow from financial institutions, with the amount borrowed can be a proxy of their disposable income and the current mortgage rate. Hence, the inclusion of income and interest rates offer the possibility of adding characteristics to the regression model for the next iteration of this project. 
 
 To further improve and enhance the predictions model to a more accurate level, this project is going to benefit from a domain expert knowledge on Ireland property market.
+
+# TO DO
+
+- [ ] Calculate correlation  
+- [ ] To remove attributes with an absolute correlation of 0.75 or higher.
+- [ ] Find out outliner
+- [ ] Deploy the model as a product 
