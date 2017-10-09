@@ -54,5 +54,5 @@ modelvalues<-data.frame(obs = dfTrain$Rent, pred=predictedVal)
 
 defaultSummary(modelvalues)
 
-#http://www.analyticsvidhya.com/blog/2014/12/caret-package-stop-solution-building-predictive-models/
+
 
