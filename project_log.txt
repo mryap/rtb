@@ -1,0 +1,82 @@
+.LOG
+
+
+
+
+http://www.nyu.edu/classes/jcf/g22.3033-002/handouts/ProposalSample.htm
+
+http://www.cse.usf.edu/~xqian/courses/CIS6930_prml/proposals/proposal10.pdf
+
+http://www.ics.uci.edu/~smyth/courses/cs277/project_proposals.html
+
+http://ceur-ws.org/Vol-1564/paper18.pdf
+
+http://dl.acm.org/citation.cfm?id=2181467
+
+http://www.sciencedirect.com/science/article/pii/S131915781100019X
+
+http://www.ldeo.columbia.edu/~martins/sen_res/how_to_thesis_proposal.html
+
+19:58 30/05/2016
+https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=split+file+in+R
+
+https://blog.ouseful.info/2013/04/03/splitting-a-large-csv-file-into-separate-smaller-files-based-on-values-within-a-specific-column/
+20:07 30/05/2016
+https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=split%20csv%20file%20in%20r
+
+file_in <- file("train.csv","r")
+file_out <- file("out.csv","a")
+x <- readLines(file_in, n=1)
+writeLines(x, file_out) # copy headers
+
+B <- 10000 # depends how large is one pack
+while(length(x)) {
+  ind <- grep("^[^;]*;[^;]*; 20(09|10)", x)
+  if (length(ind)) writeLines(x[ind], file_out)
+  x <- readLines(file_in, n=B)
+}
+close(file_in)
+close(file_out)
+20:07 30/05/2016
+
+22:13 30/05/2016
+
+22:32 30/05/2016
+start splitting 3.7GB using RStudio
+22:38 30/05/2016
+file splitted done
+18:56 31/05/2016
+top up EUR 20
+
+18:56 31/05/2016
+renamed to project log only for SEM 3 project
+19:59 31/05/2016
+Download all PPR data from 2014 - 2016 https://www.dropbox.com/sh/r9xaymxcfl6cy6a/AACU2E_jghan52wC3KalKyWfa?dl=0
+19:59 31/05/2016
+
+20:00 31/05/2016
+
+22:34 02/06/2016
+split-apply-combine strategy in data manipulation
+19:20 03/06/2016
+: if an algorithm seems to outperform another algorithm in a given task, it is because it has a better fit to
+that task not because it is an intrinsically superior algorithm
+09:57 06/06/2016
+predictive-analytics-with-r-pmml-adapa-and-excel
+07:52 13/06/2016
+check out the book R in Action
+08:13 13/06/2016
+
+14:52 21/06/2016
+
+10:29 03/07/2016
+organise C drive (together with dropbox)
+07:29 07/07/2016
+train and compare multiple regression models - Bayesian linear regression, neural network regression, boosted decision tree regression, linear regression, and decision forest regression.
+07:44 30/07/2016
+
+23:37 31/07/2016
+https://gallery.cortanaintelligence.com/Experiment/Convert-ARFF-to-CSV-data-format-1
+23:40 31/07/2016
+https://kb.brandeis.edu/display/SCI/How+to+open+a+notebook+file+with+iPython+notebook
+22:53 02/08/2016
