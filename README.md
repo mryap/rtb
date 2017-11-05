@@ -72,3 +72,7 @@ To further improve and enhance the predictions model to a more accurate level, t
 - [ ] To remove attributes with an absolute correlation of 0.75 or higher.
 - [ ] Find out outliner
 - [ ] Deploy the model as a product 
+
+# Note 2 Shelf
+
+Local Repository C:\Users\mryapss\WinPython-64bit-3.5.3.1Qt5\notebooks 
